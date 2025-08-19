@@ -1,0 +1,171 @@
+:root {
+    --dark-brown: #4E2323;
+    --light-brown: #594F43;
+    --green: #4E8065;
+    --beige: #FFDDBF;
+    --light-beige: #FFF3E5;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding-top: 20px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--light-beige);
+    color: var(--dark-brown);
+    line-height: 1.5;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+#auth-section {
+    margin-bottom: 10px;
+}
+
+#auth-section input {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--dark-brown);
+    font-size: 14px;
+}
+
+#auth-section button {
+    background-color: var(--green);
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#auth-section button:hover {
+    background-color: #3a6850;
+}
+
+#searchInput {
+    margin-top: 10px;
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.table-container {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid var(--dark-brown);
+    text-align: left;
+}
+
+th {
+    cursor: pointer;
+    background: var(--beige);
+    position: sticky;
+    top: 0;
+}
+
+tr:hover {
+    background: var(--light-beige);
+}
+
+select {
+    padding: 4px;
+}
+
+textarea {
+    width: 100%;
+    height: 40px;
+    font-size: 0.9em;
+    resize: vertical;
+}
+
+/* Status dropdown cores */
+.status-dropdown {
+    padding: 4px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+.status-dropdown:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+.status-to-send { background-color: var(--dark-brown); }
+.status-sent { background-color: var(--green); }
+.status-interview { background-color: #ff9800; }
+.status-rejected { background-color: #dc3545; }
+.status-offer { background-color: var(--green); color: black; }
+
+/* Botão Link */
+.link-btn {
+    background-color: var(--green);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.link-btn:hover {
+    background-color: #45a049;
+}
+
+/* Formulário nova vaga */
+#new-job-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid var(--dark-brown);
+    border-radius: 8px;
+    margin: 20px;
+}
+
+#new-job-form input {
+    flex: 1 1 200px;
+    padding: 8px;
+    border: 1px solid var(--dark-brown);
+    border-radius: 5px;
+}
+
+#new-job-form button {
+    background-color: var(--green);
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1 1 100px;
+}
+
+#new-job-form button:hover {
+    background-color: #3a6850;
+}
+
+
+
+

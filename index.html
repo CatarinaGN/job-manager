@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Applications Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<header>
+    <h1>📊 Job Applications Dashboard</h1>
+    <div id="auth-section">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button id="loginBtn">Login</button>
+        <button id="logoutBtn" style="display:none;">Logout</button>
+    </div>
+    <input type="text" id="searchInput" placeholder="🔍 Search job or company..." style="display:none;">
+</header>
+
+<main style="display:none;" id="main-section">
+    <div id="new-job-form">
+        <input type="text" id="newCompany" placeholder="Company">
+        <input type="text" id="newPosition" placeholder="Position">
+        <input type="text" id="newAiRisk" placeholder="AI Risk">
+        <input type="text" id="newFit" placeholder="Fit">
+        <input type="text" id="newSector" placeholder="Sector name">
+        <input type="url" id="newLink" placeholder="Job Link">
+        <button id="addJobBtn">Add Job</button>
+    </div>
+
+    <div class="table-container">
+        <table id="jobsTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Company</th>
+                    <th onclick="sortTable(1)">Position</th>
+                    <th onclick="sortTable(2)">AI Risk</th>
+                    <th onclick="sortTable(3)">Fit</th>
+                    <th onclick="sortTable(4)">Sector</th>
+                    <th>Status</th>
+                    <th>Notes</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
